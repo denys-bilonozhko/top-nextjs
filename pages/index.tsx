@@ -1,5 +1,5 @@
 import React from 'react';
-import { Title, Button, Text } from '../components';
+import { Title, Button, Text, Badge } from '../components';
 
 export default function Home(): JSX.Element {
   return (
@@ -19,6 +19,19 @@ export default function Home(): JSX.Element {
       <Text size="small">Text size 14</Text>
       <Text>Text size 16</Text>
       <Text size="large">Text size 18</Text>
+      <Badge size="small" color="light">
+        Small
+      </Badge>
+      <Badge size="medium" color="red">
+        Medium
+      </Badge>
+      <Badge size="small" color="green">
+        Small
+      </Badge>
+      <Badge color="primary">Primary</Badge>
+      <Badge color="primary" href="#">
+        Link
+      </Badge>
     </>
   );
 }
